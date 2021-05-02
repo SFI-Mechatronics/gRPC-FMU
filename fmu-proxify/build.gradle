@@ -13,6 +13,10 @@ dependencies {
     implementation "info.laht.fmi4j:fmu-builder:$fmi4j_version"
 
     testImplementation "info.laht.fmi4j:fmi-import:$fmi4j_version"
+
+    api group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
+    api group: 'org.glassfish.jaxb', name: 'jaxb-core', version: '2.3.0.1'
+    api group: 'org.glassfish.jaxb', name: 'jaxb-runtime', version: '2.3.3'
 }
 
 task copyWrapperJar(type: Copy) {
